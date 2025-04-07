@@ -42,15 +42,17 @@ Permite registrar entradas e saídas, visualizar gráficos interativos, definir 
 ## 📁 Estrutura do projeto
 
 📦 src
- ┣ 📂assets          # Imagens e ícones
- ┣ 📂components      # Componentes da aplicação
- ┣ 📜App.jsx         # Componente principal
- ┣ 📜main.jsx        # Ponto de entrada da aplicação
- ┗ 📜index.css       # Estilos globais
+┣ 📂assets # Imagens e ícones
+┣ 📂components # Componentes da aplicação
+┣ 📜App.jsx # Componente principal
+┣ 📜main.jsx # Ponto de entrada da aplicação
+┗ 📜index.css # Estilos globais
+
+---
 
 ## 📌 Status do Projeto
 
-✅ Finalizado e pronto para deploy na Vercel
+✅ Finalizado e pronto para deploy na [Vercel](https://vercel.com/)
 
 
 

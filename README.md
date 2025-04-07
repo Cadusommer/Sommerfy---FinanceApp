@@ -39,15 +39,6 @@ Permite registrar entradas e saídas, visualizar gráficos interativos, definir 
 
 ---
 
-## 📦 Como executar o projeto localmente
-
-1. Clone o repositório:
-
-```bash
-git clone https://github.com/seu-usuario/Sommerfy---FinanceApp.git
-
----
-
 ## 📁 Estrutura do projeto
 
 📦 src

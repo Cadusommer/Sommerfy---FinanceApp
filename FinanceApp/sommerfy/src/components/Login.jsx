@@ -18,7 +18,6 @@ const Login = () => {
       email === usuarioSalvo.email &&
       senha === usuarioSalvo.senha
     ) {
-      alert("Login bem-sucedido!");
       navigate("/conteudo");
     } else {
       alert("E-mail ou senha inválidos.");

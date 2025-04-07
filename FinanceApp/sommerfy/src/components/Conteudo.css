@@ -378,7 +378,7 @@
   
   @media (max-width: 480px) {
     .conteudo-container h1 {
-      font-size: 1.8em;
+      font-size: 1.6em;
     }
   
     .filtros select {
@@ -402,7 +402,18 @@
       font-size: 0.95rem;
     }
   }
-  
+
+  @media (max-width: 576px) {
+    .conteudo-container h1 {
+      font-size: 1.5em;
+    }
+  }
+
+  @media (max-width: 373px) {
+    .conteudo-container h1 {
+      font-size: 1.2em;
+    }
+  }
   
   
   

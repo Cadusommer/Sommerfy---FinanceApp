@@ -27,6 +27,7 @@ const Conteudo = () => {
   const [metaValor, setMetaValor] = useState("");
   const [progressoMetas, setProgressoMetas] = useState({});
   const [valoresAdicionados, setValoresAdicionados] = useState({});
+  const [isInicializado, setIsInicializado] = useState(false);
 
   useEffect(() => {
     const usuarioSalvo = JSON.parse(localStorage.getItem("usuario"));
@@ -46,23 +47,47 @@ const Conteudo = () => {
 
     const progressoSalvo = JSON.parse(localStorage.getItem("progressoMetas"));
     if (progressoSalvo) setProgressoMetas(progressoSalvo);
+
+    const valoresSalvos = JSON.parse(
+      localStorage.getItem("valoresAdicionados")
+    );
+    if (valoresSalvos) setValoresAdicionados(valoresSalvos);
+
+    setIsInicializado(true);
   }, []);
 
   useEffect(() => {
-    localStorage.setItem("transacoes", JSON.stringify(transacoes));
-  }, [transacoes]);
+    if (isInicializado) {
+      localStorage.setItem("transacoes", JSON.stringify(transacoes));
+    }
+  }, [transacoes, isInicializado]);
 
   useEffect(() => {
-    localStorage.setItem("limites", JSON.stringify(limites));
-  }, [limites]);
+    if (isInicializado) {
+      localStorage.setItem("limites", JSON.stringify(limites));
+    }
+  }, [limites, isInicializado]);
 
   useEffect(() => {
-    localStorage.setItem("metas", JSON.stringify(metas));
-  }, [metas]);
+    if (isInicializado) {
+      localStorage.setItem("metas", JSON.stringify(metas));
+    }
+  }, [metas, isInicializado]);
 
   useEffect(() => {
-    localStorage.setItem("progressoMetas", JSON.stringify(progressoMetas));
-  }, [progressoMetas]);
+    if (isInicializado) {
+      localStorage.setItem("progressoMetas", JSON.stringify(progressoMetas));
+    }
+  }, [progressoMetas, isInicializado]);
+
+  useEffect(() => {
+    if (isInicializado) {
+      localStorage.setItem(
+        "valoresAdicionados",
+        JSON.stringify(valoresAdicionados)
+      );
+    }
+  }, [valoresAdicionados, isInicializado]);
 
   useEffect(() => {
     const progressoCategorias = {};

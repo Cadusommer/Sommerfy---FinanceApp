@@ -34,7 +34,6 @@ const Cadastro = () => {
 
     localStorage.setItem("usuario", JSON.stringify(usuario));
 
-    alert("Cadastro realizado com sucesso!");
     navigate("/login");
   };
 

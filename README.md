@@ -46,6 +46,8 @@ Permite registrar entradas e saídas, visualizar gráficos interativos, definir 
 ```bash
 git clone https://github.com/seu-usuario/Sommerfy---FinanceApp.git
 
+---
+
 ## 📁 Estrutura do projeto
 
 📦 src

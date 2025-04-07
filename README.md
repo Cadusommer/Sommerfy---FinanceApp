@@ -41,12 +41,12 @@ Permite registrar entradas e saídas, visualizar gráficos interativos, definir 
 
 ## 📁 Estrutura do projeto
 
-📦 src
-┣ 📂assets # Imagens e ícones
-┣ 📂components # Componentes da aplicação
-┣ 📜App.jsx # Componente principal
-┣ 📜main.jsx # Ponto de entrada da aplicação
-┗ 📜index.css # Estilos globais
+- 📦 src
+- ┣ 📂assets # Imagens e ícones
+- ┣ 📂components # Componentes da aplicação
+- ┣ 📜App.jsx # Componente principal
+- ┣ 📜main.jsx # Ponto de entrada da aplicação
+- ┗ 📜index.css # Estilos globais
 
 ---
 

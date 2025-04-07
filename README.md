@@ -54,5 +54,9 @@ Permite registrar entradas e saídas, visualizar gráficos interativos, definir 
 
 ✅ Finalizado e pronto para deploy na [Vercel](https://vercel.com/)
 
+## 🌐 Deploy
+✅ Projeto disponível em produção!  
+🔗 [Acesse aqui](https://sommerfy-finance-app-vs7f.vercel.app)
+
 
 

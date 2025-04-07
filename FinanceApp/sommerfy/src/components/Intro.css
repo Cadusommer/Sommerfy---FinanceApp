@@ -1,0 +1,68 @@
+.intro {
+    padding: 1rem;
+  }
+  
+  .intro ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+  }
+  
+  .intro h2 {
+    color: #2ECC71;
+    font-size: 1.5em;
+  }
+  
+  .intro p {
+    font-size: 1em;
+    margin-bottom: 1rem;
+  }
+  
+  .intro button {
+    padding: 0.8em 1.5em;
+    background-color: #2ECC71;
+    color: #000;
+    border-radius: 20px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+  }
+  
+  .intro button:hover {
+    background-color: #27ae60;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .intro {
+      font-size: 1em;
+    }
+  
+    .intro h2 {
+      font-size: 1.2em;
+    }
+  
+    .intro button {
+      width: 100%;
+      font-size: 1em;
+    }
+  }
+  
+  @media (max-width: 425px) {
+    .intro h2 {
+      font-size: 1em;
+    }
+  
+    .intro p {
+      font-size: 0.95em;
+    }
+  
+    .intro button {
+      font-size: 0.95em;
+      padding: 1em;
+    }
+  }
+  

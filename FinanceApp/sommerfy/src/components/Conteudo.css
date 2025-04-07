@@ -1,0 +1,408 @@
+.conteudo-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .conteudo-container h1 {
+    color: #2ecc71;
+    font-size: 2.5em;
+  }
+  
+  /* Filtros */
+  .filtros select {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    width: 150px;
+  }
+  
+  /* Lista de transações */
+  .lista-transacoes {
+    margin: 2rem 0;
+  }
+  
+  .transacao {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border-left: 5px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+  
+  .transacao.renda {
+    border-left-color: #2ecc71;
+  }
+  
+  .transacao.despesa {
+    border-left-color: #e74c3c;
+  }
+
+  .transacao.alerta {
+    background-color: #ffe5e5;
+    border-left: 6px solid #ff4d4d; 
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(255, 0, 0, 0.1);
+    animation: piscarAlerta 1s infinite alternate;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Metas */
+  .metas-container {
+    margin-top: 30px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+  }
+  
+  .metas-container h3 {
+    margin-bottom: 12px;
+  }
+  
+  .metas-container form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+    margin-top: 2.5em;
+    background-color: white;
+  }
+  
+  .metas-container input {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+  }
+  
+  .metas-container button {
+    padding: 8px 16px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .lista-metas {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .lista-metas li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+  }  
+  
+  @keyframes piscarAlerta {
+    from {
+      background-color: #ffe5e5;
+    }
+    to {
+      background-color: #ffc2c2;
+    }
+  }
+  
+  .transacao.alerta span {
+    color: #b30000;
+    font-weight: bold;
+  }  
+  
+  /* Gráficos */
+  .grafico {
+    margin: 3rem 0;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .grafico h3 {
+    color: black;
+  }
+  
+  /* Formulário */
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    width: 100%;
+    max-width: 900px; 
+  }
+  
+  .formulario input,
+  .formulario select {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 300px;
+  }
+  
+  .formulario button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #2ecc71;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  .formulario button:hover {
+    background-color: #219150;
+  }
+  
+  /* Categorias */
+  .categorias-container {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #fefefe;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  }
+  
+  .lista-categorias {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .lista-categorias li {
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    background: #f0f0f0;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    align-items: center;
+  }
+  
+  .lista-categorias button {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 4px 10px;
+    cursor: pointer;
+  }
+
+  .select-ajustado {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  /* Limites */
+  .limites-container {
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 2px solid #d1d1d1;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+  }
+  
+  .limites-container h3 {
+    margin-bottom: 1rem;
+    color: #333;
+    font-size: 1.2rem;
+  }
+  
+  .limites-container div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+  }
+  
+  .limites-container span {
+    width: 150px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .limites-container input[type="number"] {
+    padding: 6px 10px;
+    width: 120px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .avisos {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    border-radius: 8px;
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    color: #856404;
+    font-size: 0.95rem;
+  }
+  
+  .avisos p {
+    margin: 0.5rem 0;
+  }
+
+  .transacao.alerta {
+    background-color: #ffe6e6;
+    border: 1px solid #ff9999;
+  }
+
+  /* Progresso */
+  .progresso-container {
+    margin-top: 2rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 12px;
+  }
+  
+  .progresso-container h3 {
+    margin-bottom: 1rem;
+    color: black;
+    text-align: center;
+  }
+  
+  .barra-progresso {
+    height: 20px;
+    border-radius: 20px;
+    background-color: #d9d9d9;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .barra-preenchida {
+    height: 100%;
+    transition: width 0.4s ease;
+    border-radius: 20px;
+  }
+  
+  .barra-verde {
+    background-color: #60d394;
+  }
+  
+  .barra-amarela {
+    background-color: #f7c948;
+  }
+  
+  .barra-vermelha {
+    background-color: #ff6b6b;
+  }
+  
+  .progresso-info {
+    color: black;
+    font-weight: 500;
+    margin-bottom: 5px;
+    text-align: center;
+  }  
+
+/* Progresso meta */
+.meta-item {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.meta-item strong {
+  display: block;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.meta-item form {
+  display: flex;
+  gap: 10px;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.meta-item input[type="number"] {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+  width: 140px;
+}
+
+.meta-item button {
+  padding: 8px 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.meta-item button:hover {
+  background-color: #217dbb;
+}
+
+.botao-remover {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 0.5em;
+}
+
+.botao-remover:hover {
+  background-color: #c0392b;
+}
+  
+  @media (max-width: 480px) {
+    .conteudo-container h1 {
+      font-size: 1.8em;
+    }
+  
+    .filtros select {
+      width: 100%;
+    }
+  
+    .formulario input,
+    .formulario select {
+      width: 100%;
+    }
+  
+    .formulario button {
+      width: 100%;
+    }
+  
+    .grafico {
+      padding: 0.5rem;
+    }
+  
+    .transacao {
+      font-size: 0.95rem;
+    }
+  }
+  
+  
+  
+  

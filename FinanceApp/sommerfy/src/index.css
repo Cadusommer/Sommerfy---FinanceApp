@@ -1,0 +1,66 @@
+/* CSS GLOBAL */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #2C3E50;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  color: #E8F5E9;
+}
+
+.topo h1 {
+  text-align: center;
+  font-size: 4.5em;
+  color: #2ECC71;
+}
+
+.page-content {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 2rem;
+}
+
+/* Responsividade global */
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem 1rem;
+  }
+
+  .topo h1 {
+    font-size: 2.5em;
+  }
+
+  .page-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .topo h1 {
+    font-size: 2em;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+}
+
+
+
+
+
+
